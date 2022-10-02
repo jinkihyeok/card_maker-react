@@ -1,9 +1,11 @@
 import firebase from "firebase/compat/app";
+import firebaseApp from "./firebase";
+import "firebase/compat/auth";
 
 class AuthService {
-  lonin(providerName) {
+  login(providerName) {
     const authProvider = new firebase.auth[`${providerName}AuthProvider`]();
-    return firebase.auth().signInWithPopup(authProvider);
+    return firebaseApp.auth().signInWithPopup(authProvider);
   }
 }
 
