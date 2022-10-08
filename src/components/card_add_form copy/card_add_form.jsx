@@ -29,7 +29,7 @@ const CardAddForm = ({ FileInput, onAdd }) => {
       theme: themeRef.current.value,
       title: titleRef.current.value || "",
       email: emailRef.current.value || "",
-      messageR: messageRef.current.value || "",
+      message: messageRef.current.value || "",
       fileName: file.fileName || "",
       fileURL: file.fileURL || "",
     };
